@@ -60,9 +60,9 @@ setup.kibana:
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
   host: "https://172.16.0.116:5601"
-  ssl.certificate_authorities: "C:\\ProgramData\\Elastic\\certs\\ca.crt"
-  ssl.certificate: "C:\\ProgramData\\Elastic\\certs\\kibana.crt"
-  ssl.key: "C:\\ProgramData\\Elastic\\certs\\kibana.key"
+  ssl.certificate_authorities: "/home/openvpn-admin/metricbeat/certs/ca.crt"
+  ssl.certificate: "/home/openvpn-admin/metricbeat/certs/kibana.crt"
+  ssl.key: "/home/openvpn-admin/metricbeat/certs/kibana.key"
 
   # Kibana Space ID
   # ID of the Kibana Space into which the dashboards should be loaded. By default,
@@ -80,9 +80,9 @@ output.elasticsearch:
 
   # Protocol - either `http` (default) or `https`.
   protocol: "https"
-  ssl.certificate_authorities: "C:\\ProgramData\\Elastic\\certs\\ca.crt"
-  ssl.certificate: "C:\\ProgramData\\Elastic\\certs\\client.crt"
-  ssl.key: "C:\\ProgramData\\Elastic\\certs\\client.key"
+  ssl.certificate_authorities: "/home/openvpn-admin/metricbeat/certs/ca.crt"
+  ssl.certificate: "/home/openvpn-admin/metricbeat/certs/client.crt"
+  ssl.key: "/home/openvpn-admin/metricbeat/certs/client.key"
   api_key: "527k9X8BCYBhg-L6_4hk:YOaQKklqTfaULDA1SocrIA"
   #username: "elastic"
   #password: "changeme"
